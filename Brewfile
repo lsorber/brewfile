@@ -45,7 +45,7 @@ brew "tldr"  # https://tldr.sh/
 brew "tree"
 brew "wget"
 
-# Menubar
+# Menu Bar
 
 cask "1password"  # https://1password.com/
 cask "keepingyouawake"  # https://github.com/newmarcel/KeepingYouAwake
