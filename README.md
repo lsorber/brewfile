@@ -8,7 +8,8 @@ To get up and running with a new macOS device:
 ```
 2. Install my [Brewfile](Brewfile) with [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle):
 ```bash
-brew bundle install --file=- < <(curl --silent https://raw.githubusercontent.com/lsorber/brewfile/main/Brewfile)
+brew bundle install --file=- < \
+  <(curl --silent https://raw.githubusercontent.com/lsorber/brewfile/main/Brewfile)
 ```
 3. Configure the shell:
 ```bash
