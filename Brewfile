@@ -14,7 +14,7 @@ brew "font-fira-code-nerd-font"  # https://www.nerdfonts.com/
 # Apps
 
 cask "cakebrew"  # https://www.cakebrew.com/
-cask "crossover"
+cask "crossover"  # https://www.codeweavers.com/crossover/
 cask "docker"
 cask "google-chrome"
 cask "notion"
@@ -49,6 +49,7 @@ brew "wget"
 
 cask "1password"  # https://1password.com/
 cask "keepingyouawake"  # https://github.com/newmarcel/KeepingYouAwake
+cask "linearmouse"  # https://github.com/lujjjh/LinearMouse
 cask "lunar"  # https://lunar.fyi/
 cask "meetingbar"  # https://github.com/leits/MeetingBar
 mas "nextdns", id: 1464122853  # https://nextdns.io/
