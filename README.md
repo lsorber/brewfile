@@ -15,7 +15,4 @@ brew bundle install --file=- < \
 ```bash
 echo "set fish_greeting" >> ~/.config/fish/config.fish
 ```
-4. [Configure an integer scaling factor for your display(s) in System Preferences](https://tonsky.me/blog/monitors/) and then disable font smoothing:
-```bash
-defaults -currentHost write -g AppleFontSmoothing -int 0
-```
+4. [Configure an integer scaling factor for your display(s) in System Preferences](https://tonsky.me/blog/monitors/)
