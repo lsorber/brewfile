@@ -13,6 +13,7 @@ brew bundle install --file=- < \
 ```
 3. Configure the shell:
 ```bash
+git config --global init.defaultBranch main
 echo "set fish_greeting" >> ~/.config/fish/config.fish
 ```
 4. [Configure an integer scaling factor for your display(s) in System Preferences](https://tonsky.me/blog/monitors/)
