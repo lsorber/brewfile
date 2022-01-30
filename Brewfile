@@ -2,30 +2,21 @@
 
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"  # Alternate versions of casks
+tap "buo/cask-upgrade"  # Update casks with `brew cu`
 cask_args appdir: "/Applications", require_sha: true
+
+# Homebrew
+
+brew "cu"  # https://github.com/buo/homebrew-cask-upgrade
+brew "mas"  # https://github.com/mas-cli/mas
 
 # Shell
 
 brew "fish"  # https://fishshell.com/
+brew "font-fira-code-nerd-font"  # https://www.nerdfonts.com/
 brew "starship"  # https://starship.rs/
 brew "direnv"  # https://direnv.net/
-brew "font-fira-code-nerd-font"  # https://www.nerdfonts.com/
-
-# Apps
-
-cask "cakebrew"  # https://www.cakebrew.com/
-cask "crossover"  # https://www.codeweavers.com/crossover/
-cask "docker"
-cask "google-chrome"
-cask "notion"
-cask "pycharm"
-cask "slack"
-cask "steam"
-cask "sublime-text"
-cask "visual-studio-code"
-cask "virtualbox"
-cask "vlc"
-cask "whatsapp"
 
 # CLI
 
@@ -37,7 +28,6 @@ cask "java"
 brew "git"
 cask "ngrok"  # https://ngrok.com/
 brew "node"
-brew "python", link: true
 brew "ripgrep"  # https://github.com/BurntSushi/ripgrep
 brew "shellcheck"  # https://github.com/koalaman/shellcheck
 brew "terraform"
@@ -45,9 +35,31 @@ brew "tldr"  # https://tldr.sh/
 brew "tree"
 brew "wget"
 
+# Python
+
+brew "openssl"
+brew "readline"
+brew "sqlite3"
+brew "xz"
+brew "zlib"
+brew "pyenv"
+
+# Apps
+
+cask "cakebrew"  # https://www.cakebrew.com/
+cask "docker"
+cask "google-chrome"
+cask "notion"
+cask "slack"
+cask "steam"
+cask "sublime-text"
+cask "visual-studio-code"
+cask "vlc"
+cask "whatsapp"
+
 # Menu Bar
 
-cask "1password"  # https://1password.com/
+cask "1password-beta"  # https://1password.com/
 cask "keepingyouawake"  # https://github.com/newmarcel/KeepingYouAwake
 cask "linearmouse"  # https://github.com/lujjjh/LinearMouse
 cask "lunar"  # https://lunar.fyi/
