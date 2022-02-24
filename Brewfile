@@ -4,17 +4,12 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"  # Alternate versions of casks
 tap "buo/cask-upgrade"  # Update casks with `brew cu`
-cask_args appdir: "/Applications", require_sha: true
-
-# Homebrew
-
-brew "cu"  # https://github.com/buo/homebrew-cask-upgrade
-brew "mas"  # https://github.com/mas-cli/mas
+cask_args appdir: "/Applications"
 
 # Shell
 
 brew "fish"  # https://fishshell.com/
-brew "font-fira-code-nerd-font"  # https://www.nerdfonts.com/
+cask "font-fira-code-nerd-font"  # https://www.nerdfonts.com/
 brew "starship"  # https://starship.rs/
 brew "direnv"  # https://direnv.net/
 
@@ -23,9 +18,9 @@ brew "direnv"  # https://direnv.net/
 brew "awscli"
 brew "azure-cli"
 brew "ctop"  # https://github.com/bcicen/ctop
-brew "gcloud"
-cask "java"
+brew "java"
 brew "git"
+brew "mas"  # https://github.com/mas-cli/mas
 cask "ngrok"  # https://ngrok.com/
 brew "node"
 brew "ripgrep"  # https://github.com/BurntSushi/ripgrep
