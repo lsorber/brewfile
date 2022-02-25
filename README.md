@@ -2,9 +2,10 @@
 
 To get up and running with a new macOS device:
 
-1. Install Command Line Tools (CLT) for Xcode:
+1. Install Command Line Tools (CLT) for Xcode and Rosetta 2:
 ```bash
 xcode-select --install
+softwareupdate --install-rosetta
 ```
 2. Install [Homebrew](https://brew.sh/):
 ```bash
