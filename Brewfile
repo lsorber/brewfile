@@ -44,6 +44,7 @@ brew "pyenv"
 cask "cakebrew"  # https://www.cakebrew.com/
 cask "docker"
 cask "google-chrome"
+cask "microsoft-teams"
 cask "notion"
 cask "slack"
 cask "steam"
@@ -51,6 +52,7 @@ cask "sublime-text"
 cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
+cask "zoom"
 
 # Menu Bar
 
