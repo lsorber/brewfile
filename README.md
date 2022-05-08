@@ -18,17 +18,19 @@ brew bundle install --file=- < \
 ```
 4. Configure:
 ```bash
-# Set up zsh, direnv, pyenv, and starship.
-echo 'source $(brew --prefix)/share/antigen/antigen.zsh' >> ~/.zshrc
-echo 'antigen bundle zsh-users/zsh-syntax-highlighting' >> ~/.zshrc
-echo 'antigen bundle zsh-users/zsh-autosuggestions' >> ~/.zshrc
-echo 'antigen bundle zsh-users/zsh-history-substring-search' >> ~/.zshrc
-echo 'antigen apply' >> ~/.zshrc
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-echo "bindkey '^[[A' history-substring-search-up" >> ~/.zshrc
-echo "bindkey '^[[B' history-substring-search-down" >> ~/.zshrc
+# Set up zsh plugins, direnv, pyenv, and starship.
+cat << EOF >> ~/.zshrc
+source $(brew --prefix)/share/antigen/antigen.zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen apply
+eval "$(direnv hook bash)"
+eval "$(pyenv init -)"
+eval "$(starship init zsh)"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+EOF
 
 # Set git's default branch name to main.
 git config --global init.defaultBranch main
