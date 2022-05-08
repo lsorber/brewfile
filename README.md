@@ -25,7 +25,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen apply
-eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
 eval "$(starship init zsh)"
 bindkey '^[[A' history-substring-search-up
