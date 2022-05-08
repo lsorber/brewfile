@@ -8,7 +8,6 @@ cask_args appdir: "/Applications"
 
 # Shell
 
-brew "fish"  # https://fishshell.com/
 cask "font-fira-code-nerd-font"  # https://www.nerdfonts.com/
 brew "starship"  # https://starship.rs/
 brew "direnv"  # https://direnv.net/
@@ -18,17 +17,23 @@ brew "direnv"  # https://direnv.net/
 brew "awscli"
 brew "azure-cli"
 brew "ctop"  # https://github.com/bcicen/ctop
+brew "gnupg"
 brew "java"
 brew "git"
 brew "mas"  # https://github.com/mas-cli/mas
 cask "ngrok"  # https://ngrok.com/
 brew "node"
+brew "pinentry-mac"
 brew "ripgrep"  # https://github.com/BurntSushi/ripgrep
 brew "shellcheck"  # https://github.com/koalaman/shellcheck
 brew "terraform"
 brew "tldr"  # https://tldr.sh/
 brew "tree"
 brew "wget"
+
+# Go
+
+brew "go"
 
 # Python
 
@@ -39,11 +44,18 @@ brew "xz"
 brew "zlib"
 brew "pyenv"
 
+# Rust
+
+brew "rustup-init"  # Afterwards, run `rustup-init` to install Rust
+
 # Apps
 
 cask "cakebrew"  # https://www.cakebrew.com/
+cask "crossover"
+cask "discord"
 cask "docker"
 cask "google-chrome"
+cask "grandperspective"
 cask "microsoft-teams"
 cask "notion"
 cask "slack"
@@ -51,12 +63,14 @@ cask "steam"
 cask "sublime-text"
 cask "visual-studio-code"
 cask "vlc"
+cask "wezterm"
 cask "whatsapp"
 cask "zoom"
 
 # Menu Bar
 
 cask "1password-beta"  # https://1password.com/
+cask "elgato-control-center"
 cask "keepingyouawake"  # https://github.com/newmarcel/KeepingYouAwake
 cask "linearmouse"  # https://github.com/lujjjh/LinearMouse
 cask "lunar"  # https://lunar.fyi/
