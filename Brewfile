@@ -31,22 +31,11 @@ brew "tldr"  # https://tldr.sh/
 brew "tree"
 brew "wget"
 
-# Go
+# Go, Python, Rust
 
 brew "go"
-
-# Python
-
-brew "openssl"
-brew "readline"
-brew "sqlite3"
-brew "xz"
-brew "zlib"
 brew "pyenv"
 brew "pyenv-virtualenv"
-
-# Rust
-
 brew "rustup-init"  # Afterwards, run `rustup-init` to install Rust
 
 # Apps
