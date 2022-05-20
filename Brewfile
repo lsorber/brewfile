@@ -43,6 +43,7 @@ brew "sqlite3"
 brew "xz"
 brew "zlib"
 brew "pyenv"
+brew "pyenv-virtualenv"
 
 # Rust
 
