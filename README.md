@@ -25,12 +25,16 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen apply
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 eval "$(starship init zsh)"
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+
+# Let starship handle virtual environment prompts.
+export CONDA_CHANGEPS1=false
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 EOF
 
 # Set git's default branch name to main.
