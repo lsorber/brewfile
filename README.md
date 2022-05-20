@@ -27,6 +27,7 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen apply
 eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 eval "$(starship init zsh)"
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
