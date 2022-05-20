@@ -18,8 +18,8 @@ brew bundle install --file=- < \
 ```
 4. Configure:
 ```bash
-# Set up zsh plugins, direnv, pyenv, and starship.
 cat << EOF >> ~/.zshrc
+# Set up zsh plugins, direnv, pyenv, and starship.
 source $(brew --prefix)/share/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
