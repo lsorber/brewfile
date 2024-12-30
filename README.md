@@ -19,31 +19,24 @@ brew bundle install --file=- < \
 4. Configure:
 ```bash
 cat << EOF >> ~/.zshrc
-# Set up zsh plugins, direnv, pyenv, and starship.
-source $(brew --prefix)/share/antigen/antigen.zsh
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-history-substring-search
-antigen apply
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+export PIP_REQUIRE_VIRTUALENV=true  # Prevent erroneous pip install commands
+export PATH="$HOME/.local/bin:$PATH"  # Python installations managed by uv
+export PATH="$HOMEBREW_PREFIX/opt/openjdk/bin:$PATH"
+source $HOMEBREW_PREFIX/opt/antidote/share/antidote/antidote.zsh
+antidote load  # Add plugins to ~/.zsh_plugins.txt
 eval "$(direnv hook zsh)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 eval "$(starship init zsh)"
-
-# Let starship handle virtual environment prompts.
-export CONDA_CHANGEPS1=false
-export VIRTUAL_ENV_DISABLE_PROMPT=1
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
 EOF
 
-# Set git's default branch name to main.
+# Set git's default branch name to main
 git config --global init.defaultBranch main
 
-# Show hidden files in Finder.
+# Show hidden files in Finder
 defaults write com.apple.Finder AppleShowAllFiles true
 
-# Use list view in Finder.
+# Use list view in Finder
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 ```
 5. [Set an integer scaling factor for your display(s) in System Preferences](https://tonsky.me/blog/monitors/)
