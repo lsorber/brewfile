@@ -22,6 +22,7 @@ brew "awscli"
 brew "azure-cli"
 brew "gnupg"
 brew "git"
+brew "git-delta"
 brew "mas"  # https://github.com/mas-cli/mas
 brew "pinentry-mac"
 brew "tree"
